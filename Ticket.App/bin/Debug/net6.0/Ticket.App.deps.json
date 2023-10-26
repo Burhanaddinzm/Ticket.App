@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Ticket.App/1.0.0": {
+        "dependencies": {
+          "Ticket.Service": "1.0.0"
+        },
+        "runtime": {
+          "Ticket.App.dll": {}
+        }
+      },
+      "Ticket.Core/1.0.0": {
+        "runtime": {
+          "Ticket.Core.dll": {}
+        }
+      },
+      "Ticket.Service/1.0.0": {
+        "dependencies": {
+          "Ticket.Core": "1.0.0"
+        },
+        "runtime": {
+          "Ticket.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ticket.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ticket.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ticket.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
