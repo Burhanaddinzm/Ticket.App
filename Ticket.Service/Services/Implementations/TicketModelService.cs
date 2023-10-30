@@ -22,35 +22,16 @@ namespace Ticket.Service.Services.Implementations
 
         public void Get()
         {
-
             Console.WriteLine("Input Id:");
-
             int.TryParse(Console.ReadLine(), out int id);
-            bool found = false;
-            int startIndex = 0;
-            int endIndex = _ticketModels.Count - 1;
-            while (startIndex <= endIndex)
+            TicketModel ticket = GetById(id);
+            if (ticket==null)
             {
-                int Middle = (startIndex + endIndex) / 2;
-                if (_ticketModels[Middle].Id == id)
-                {
-                    Console.WriteLine(_ticketModels[Middle]);
-                    found = true;
-                    break;
-                }
-                else if (_ticketModels[Middle].Id < id)
-                {
-                    startIndex = Middle + 1;
-                }
-                else
-                {
-                    endIndex = Middle - 1;
-                }
-
+                Console.WriteLine("Not Found!");
             }
-            if (!found)
+            else
             {
-                Console.WriteLine("This ticket does not exist");
+                Console.WriteLine(ticket);
             }
         }
 
@@ -67,34 +48,17 @@ namespace Ticket.Service.Services.Implementations
             Console.WriteLine("Input Id:");
             int.TryParse(Console.ReadLine(), out int id);
 
-            int startIndex = 0;
-            int endIndex = _ticketModels.Count - 1;
-            bool found = false;
-            while (startIndex <= endIndex)
-            {
-                int Middle = (startIndex + endIndex) / 2;
-                if (_ticketModels[Middle].Id == id)
-                {
-                    _ticketModels.RemoveAt(Middle);
-                    found = true;
-                    Console.WriteLine("Removed successfully!");
-                    break;
+            TicketModel ticket = GetById(id);
 
-                }
-                else if (_ticketModels[Middle].Id < id)
-                {
-                    startIndex = Middle + 1;
-                }
-                else
-                {
-                    endIndex = Middle - 1;
-                }
-
-            }
-            if (!found)
+            if (ticket == null)
             {
-                Console.WriteLine("This ticket does not exist");
+                Console.WriteLine("Not Found!");
             }
+            else
+            {
+                _ticketModels.Remove(ticket);
+            }
+
         }
 
         public void Update()
@@ -102,24 +66,34 @@ namespace Ticket.Service.Services.Implementations
             Console.WriteLine("Input Id:");
             int.TryParse(Console.ReadLine(), out int id);
 
+            TicketModel ticket = GetById(id);
+            if (ticket == null)
+            {
+                Console.WriteLine("Not Found!");
+            }
+            else
+            {
+                Console.WriteLine("Add name:");
+                string Name = Console.ReadLine();
+                Console.WriteLine("Add price:");
+                double.TryParse(Console.ReadLine(), out double Price);
+                ticket.Name = Name;
+                ticket.Price = Price;
+                ticket.UpdatedAt = DateTime.UtcNow.AddHours(4);
+            }
+
+        }
+
+        private TicketModel GetById(int id)
+        {
             int startIndex = 0;
             int endIndex = _ticketModels.Count - 1;
-            bool found = false;
             while (startIndex <= endIndex)
             {
                 int Middle = (startIndex + endIndex) / 2;
                 if (_ticketModels[Middle].Id == id)
                 {
-                    Console.WriteLine("Add name:");
-                    string Name = Console.ReadLine();
-                    Console.WriteLine("Add price:");
-                    double.TryParse(Console.ReadLine(), out double Price);
-                    _ticketModels[Middle].Name = Name;
-                    _ticketModels[Middle].Price = Price;
-                    _ticketModels[Middle].UpdatedAt = DateTime.UtcNow.AddHours(4);
-                    found = true;
-                    Console.WriteLine("Updated successfully!");
-                    break;
+                    return _ticketModels[Middle];
                 }
                 else if (_ticketModels[Middle].Id < id)
                 {
@@ -131,11 +105,7 @@ namespace Ticket.Service.Services.Implementations
                 }
 
             }
-            if (!found)
-            {
-                Console.WriteLine("This ticket does not exist");
-            }
-
+            return null;
         }
     }
 }
