@@ -24,7 +24,7 @@ namespace Ticket.Service.Services.Implementations
         {
             Console.WriteLine("Input Id:");
             int.TryParse(Console.ReadLine(), out int id);
-            TicketModel ticket = GetById(id);
+            TicketModel ticket = ticketRepository.Get(t => t.Id == id) ;
             if (ticket==null)
             {
                 Console.WriteLine("Not Found!");
