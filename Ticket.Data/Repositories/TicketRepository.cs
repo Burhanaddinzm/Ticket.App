@@ -3,18 +3,7 @@ using Ticket.Core.Models;
 
 namespace Ticket.Data.Repositories
 {
-    public class TicketRepository
+    public class TicketRepository : Repository<TicketModel>
     {
-        List<TicketModel> _ticketModels = new List<TicketModel>();
-
-        public void Add(TicketModel ticket)
-        {
-            _ticketModels.Add(ticket);
-        }
-
-        public List<TicketModel> GetAll()
-        {
-            return _ticketModels;
-        }
     }
 }

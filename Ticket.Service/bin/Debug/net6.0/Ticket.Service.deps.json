@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Ticket.Service/1.0.0": {
         "dependencies": {
-          "Ticket.Core": "1.0.0"
+          "Ticket.Data": "1.0.0"
         },
         "runtime": {
           "Ticket.Service.dll": {}
@@ -17,6 +17,14 @@
       "Ticket.Core/1.0.0": {
         "runtime": {
           "Ticket.Core.dll": {}
+        }
+      },
+      "Ticket.Data/1.0.0": {
+        "dependencies": {
+          "Ticket.Core": "1.0.0"
+        },
+        "runtime": {
+          "Ticket.Data.dll": {}
         }
       }
     }
@@ -28,6 +36,11 @@
       "sha512": ""
     },
     "Ticket.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ticket.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

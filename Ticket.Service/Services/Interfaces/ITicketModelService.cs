@@ -1,6 +1,4 @@
 ﻿
-using Ticket.Core.Models;
-
 namespace Ticket.Service.Services.Interfaces
 {
     public interface ITicketModelService

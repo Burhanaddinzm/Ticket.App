@@ -24,8 +24,8 @@ namespace Ticket.Service.Services.Implementations
         {
             Console.WriteLine("Input Id:");
             int.TryParse(Console.ReadLine(), out int id);
-            TicketModel ticket = ticketRepository.Get(t => t.Id == id) ;
-            if (ticket==null)
+            TicketModel? ticket = ticketRepository.Get(t => t.Id == id);
+            if (ticket == null)
             {
                 Console.WriteLine("Not Found!");
             }
@@ -48,7 +48,7 @@ namespace Ticket.Service.Services.Implementations
             Console.WriteLine("Input Id:");
             int.TryParse(Console.ReadLine(), out int id);
 
-            TicketModel ticket = GetById(id);
+            TicketModel? ticket = ticketRepository.Get(t => t.Id == id);
 
             if (ticket == null)
             {
@@ -56,7 +56,7 @@ namespace Ticket.Service.Services.Implementations
             }
             else
             {
-                _ticketModels.Remove(ticket);
+                ticketRepository.Remove(ticket);
             }
 
         }
@@ -66,7 +66,7 @@ namespace Ticket.Service.Services.Implementations
             Console.WriteLine("Input Id:");
             int.TryParse(Console.ReadLine(), out int id);
 
-            TicketModel ticket = GetById(id);
+            TicketModel? ticket = ticketRepository.Get(t => t.Id == id);
             if (ticket == null)
             {
                 Console.WriteLine("Not Found!");
@@ -83,29 +83,30 @@ namespace Ticket.Service.Services.Implementations
             }
 
         }
+        #region Before Delegate
+        //private TicketModel GetById(int id)
+        //{
+        //    int startIndex = 0;
+        //    int endIndex = _ticketModels.Count - 1;
+        //    while (startIndex <= endIndex)
+        //    {
+        //        int Middle = (startIndex + endIndex) / 2;
+        //        if (_ticketModels[Middle].Id == id)
+        //        {
+        //            return _ticketModels[Middle];
+        //        }
+        //        else if (_ticketModels[Middle].Id < id)
+        //        {
+        //            startIndex = Middle + 1;
+        //        }
+        //        else
+        //        {
+        //            endIndex = Middle - 1;
+        //        }
 
-        private TicketModel GetById(int id)
-        {
-            int startIndex = 0;
-            int endIndex = _ticketModels.Count - 1;
-            while (startIndex <= endIndex)
-            {
-                int Middle = (startIndex + endIndex) / 2;
-                if (_ticketModels[Middle].Id == id)
-                {
-                    return _ticketModels[Middle];
-                }
-                else if (_ticketModels[Middle].Id < id)
-                {
-                    startIndex = Middle + 1;
-                }
-                else
-                {
-                    endIndex = Middle - 1;
-                }
-
-            }
-            return null;
-        }
+        //    }
+        //    return null;
+        //}
+        #endregion
     }
 }
