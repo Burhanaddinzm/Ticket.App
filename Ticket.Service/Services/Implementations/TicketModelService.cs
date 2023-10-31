@@ -1,13 +1,13 @@
 ﻿
 using Ticket.Core.Models;
 using Ticket.Service.Services.Interfaces;
+using Ticket.Data.Repositories;
 
 namespace Ticket.Service.Services.Implementations
 {
     public class TicketModelService : ITicketModelService
     {
-        List<TicketModel> _ticketModels = new List<TicketModel>();
-
+        TicketRepository ticketRepository = new();
         public void Create()
         {
             Console.WriteLine("Add name:");
@@ -16,7 +16,7 @@ namespace Ticket.Service.Services.Implementations
             double.TryParse(Console.ReadLine(), out double Price);
             TicketModel ticketModel = new TicketModel(Name, Price);
             ticketModel.CreatedAt = DateTime.UtcNow.AddHours(4);
-            _ticketModels.Add(ticketModel);
+            ticketRepository.Add(ticketModel);
             Console.WriteLine("Created successfully!");
         }
 
@@ -37,7 +37,7 @@ namespace Ticket.Service.Services.Implementations
 
         public void GetAll()
         {
-            foreach (TicketModel ticketModel in _ticketModels)
+            foreach (TicketModel ticketModel in ticketRepository.GetAll())
             {
                 Console.WriteLine(ticketModel);
             }

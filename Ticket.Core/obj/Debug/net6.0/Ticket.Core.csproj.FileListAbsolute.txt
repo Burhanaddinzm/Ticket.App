@@ -9,3 +9,15 @@ C:\Users\Burhan\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core
 C:\Users\Burhan\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\refint\Ticket.Core.dll
 C:\Users\Burhan\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.pdb
 C:\Users\Burhan\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\ref\Ticket.Core.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\bin\Debug\net6.0\Ticket.Core.deps.json
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\bin\Debug\net6.0\Ticket.Core.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\bin\Debug\net6.0\Ticket.Core.pdb
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.csproj.AssemblyReference.cache
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.AssemblyInfoInputs.cache
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.AssemblyInfo.cs
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.csproj.CoreCompileInputs.cache
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\refint\Ticket.Core.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\Ticket.Core.pdb
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Core\obj\Debug\net6.0\ref\Ticket.Core.dll

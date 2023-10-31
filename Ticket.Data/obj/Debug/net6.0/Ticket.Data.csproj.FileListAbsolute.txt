@@ -1,0 +1,15 @@
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\bin\Debug\net6.0\Ticket.Data.deps.json
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\bin\Debug\net6.0\Ticket.Data.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\bin\Debug\net6.0\Ticket.Data.pdb
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\bin\Debug\net6.0\Ticket.Core.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\bin\Debug\net6.0\Ticket.Core.pdb
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.csproj.AssemblyReference.cache
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.AssemblyInfoInputs.cache
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.AssemblyInfo.cs
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.csproj.CoreCompileInputs.cache
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.csproj.CopyComplete
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\refint\Ticket.Data.dll
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\Ticket.Data.pdb
+C:\Users\burhanaddinzm\source\repos\Ticket.App\Ticket.Data\obj\Debug\net6.0\ref\Ticket.Data.dll
